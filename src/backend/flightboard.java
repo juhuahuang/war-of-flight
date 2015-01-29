@@ -135,6 +135,13 @@ public class flightboard {
 			}
 		}
 		
+		public int location_info(int x, int y){
+			return board[x][y];
+		}
+		
+		public void remove_one_part(int x, int y){
+			board[x][y] = 0;
+		}
 		
 }
 		
