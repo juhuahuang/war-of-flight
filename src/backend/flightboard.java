@@ -12,6 +12,7 @@ public class flightboard {
 			if( x<0 || x > 9 || y < 0 || y > 9 || direction < 1 || direction > 4) return false;
 			else{
 			int flight_mark = flight_num+1;
+			flight_num++;
 			if( direction == 1){ //flight head up
 				if( x+3>9 || y-2<0  || y+2>9) return false;
 				if( board[x][y] == 0) board[x][y] = flight_mark *10;
@@ -124,6 +125,7 @@ public class flightboard {
 				}	
 			}
 		}
+			
 			return true;
 	}
 	
@@ -133,6 +135,7 @@ public class flightboard {
 					if( board[i][j] == mark || board[i][j] == 10 * mark) board[i][j] = 0;
 				}
 			}
+			flight_num--; 
 		}
 		
 		public int location_info(int x, int y){
@@ -141,6 +144,11 @@ public class flightboard {
 		
 		public void remove_one_part(int x, int y){
 			board[x][y] = 0;
+		}
+		
+		
+		public int get_flight_num(){
+			return flight_num;
 		}
 		
 }
