@@ -2,7 +2,7 @@ package backend;
 
 import java.util.Scanner;
 
-public class action {
+public class Action {
 	
 	public int[] take_attack_position(){
 		Scanner sc = new Scanner(System.in);
@@ -16,7 +16,7 @@ public class action {
 	}
 	
 	
-	public  void attack(flightboard fb, int x, int y){
+	public  void attack(FlightBoard fb, int x, int y){
 		if( fb.location_info(x,y)  == 0) {
 			System.out.println("miss target");
 			return;

@@ -1,6 +1,6 @@
 package backend;
 
-public class flightboard {
+public class FlightBoard {
 	
 		protected int[][] board = new int[10][10];
 		protected int flight_num = 0;

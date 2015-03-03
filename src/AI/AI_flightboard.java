@@ -1,7 +1,7 @@
 package AI;
-import backend.flightboard;
+import backend.FlightBoard;
 import java.util.Random;
-public class AI_flightboard extends flightboard {
+public class AI_flightboard extends FlightBoard {
 	public boolean draw_flight(){
 		Random rng = new Random();
 		int x = rng.nextInt(9);

@@ -1,8 +1,8 @@
 package AI;
 import java.util.Random;
 
-import backend.action;
-public class AI_action extends action {
+import backend.Action;
+public class AI_action extends Action {
 	
 	public int[] take_attack_position(){
 		Random rng = new Random();

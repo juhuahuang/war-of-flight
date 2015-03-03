@@ -2,8 +2,8 @@ package backend;
 
 
 public class game {
-	private player player1 ;
-	private player player2 ;
+	private Player player1 ;
+	private Player player2 ;
 	private interaction game_interaction = new interaction();
 	
 	private void initialize_gameboard(){
